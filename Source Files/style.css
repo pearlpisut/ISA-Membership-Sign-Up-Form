@@ -1,54 +1,48 @@
 .marquee-w {
     position: relative;
-    max-width: 500px;
-    margin: 20px auto;
-    margin-bottom: 10px;
+    display: block;
+    max-width: 520px;
+    height: 118px;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-3deg);
+    overflow: hidden;
+    z-index: 10;
 }
-
-.marquee{
+.marquee {
+    position: absolute;
+    display: block;
+    margin: auto auto;
+    white-space: nowrap;
+    overflow: hidden;
+    min-width: 100%;
+    height: 100%;
+}
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
     text-align: center;
     color: white;
     font-weight: 600;
-    font-size: 6vw;
+    font-size: 14vw;
     background: linear-gradient(to right top, #dd7eb4,#b096dc,#82d1f8);
-    -webkit-text-stroke: 3px transparent;
+    -webkit-text-stroke: 1.5vw transparent;
     -webkit-background-clip: text;
-    letter-spacing: 1px;
-    animation: marquee 600ms ease-out 300ms;
-    animation-fill-mode: forwards;
-    opacity: 0;
+    letter-spacing: 1px;    
+    white-space: nowrap;
+    line-height: 140px;
+    animation: marquee 14s linear infinite;
 }
-.marquee2{
-    font-weight: 700;
-    font-size: 9vw;
-    -webkit-text-stroke: 6px transparent;
-    animation: marquee2 600ms ease-out 380ms;
-    animation-fill-mode: forwards;
+.marquee2 span {
+    animation-delay: 7s;
 }
-@keyframes marquee2 {
+
+@keyframes marquee{
     0% {
-        opacity: 0;
-        transform: translateX(100%);
-    }
-    90%{
-        transform: translateX(-5%);
+        transform: translate(0, 0);
     }
     100% {
-        opacity: 1;
-        transform: translateX(0%);
-    }
-}
-@keyframes marquee {
-    0% {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    90%{
-        transform: translateX(5%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0%);
+        transform: translate(-100%, 0);
     }
 }
 
@@ -65,16 +59,12 @@
 
 
 @media only screen and (min-width: 500px){
-    .marquee-w{
-        font-size: 50px;
+    .marquee span{
+        -webkit-text-stroke: 6.5px transparent;
+        font-size: 60px;
     }
-    .marquee{
-        -webkit-text-stroke: 3.5px transparent;
-        font-size: 32px;
-    }
-    .marquee2{
-        -webkit-text-stroke: 7.5px transparent;
-        font-size: 50px;
+    .marquee-w {
+        height: 140px;
     }
 }
 
@@ -85,9 +75,6 @@
     .marquee{
         -webkit-text-stroke: 2.5px transparent;
     }
-    .marquee2{
-        -webkit-text-stroke: 5px transparent;
-    }
 }
 
 
@@ -95,6 +82,7 @@
 #wholeform{
     max-width: 500px;
     margin: 0px auto;
+    top: 40px;
     position: relative;
     border-color: black;
     z-index: 1;
@@ -441,12 +429,6 @@ small{
         font-size: 8.5 !important;
         position: relative;
         margin-left: -6px;
-    }
-}
-
-@media only screen and (min-height: 710px){
-    #wholeform{
-        /* max-height: 95vh; */
     }
 }
 
