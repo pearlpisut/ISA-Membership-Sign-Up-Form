@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="marquee-w">
+        <div class="marquee">
+            Sign Up for
+        </div>
+        <div class="marquee marquee2">
+            ISA Membership!
+        </div>
+    </div>
+    <!-- <div class="marquee-w">
+        <div class="marquee">
+            <span class="marqueeSub">&nbsp;Sign <span>Up</span> for <span>ISA Membership!</span>&nbsp;&nbsp;&nbsp;</span>
+        </div>
+        <div class="marquee marquee2">
+            <span class="marqueeSub">&nbsp;Sign <span>Up</span> for <span>ISA Membership!</span>&nbsp;&nbsp;&nbsp;</span>
+        </div>
+    </div> -->
+    <!-- <div class="row justify-content-center" id="formTT">
+        <div class="formHeader formheader1">
+            Sign&nbsp;<span>Up&nbsp;</span>for&nbsp;<span>ISA&nbsp;</span>Membership !&nbsp;&nbsp;&nbsp; 
+        </div>
+        <div class="formHeader formHeader2">
+            Sign&nbsp;<span>Up&nbsp;</span>for&nbsp;<span>ISA&nbsp;</span>Membership !&nbsp;&nbsp;&nbsp; 
+        </div>
+    </div> -->
+    <form id="wholeform" class="container needs-validation"
+    action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSepHxh_nRpC_6ywBPfgK6gi7Chs8LnFf0kUDp9uHq2z0yp_rA/formResponse"
+    >
+        <div class="form display" id="part-one">
+            <div class="row" style="margin: 5px 0 0px 0;">
+                <div class="col-12">
+                    <input id="fullname" class="form-control inputText" type="text" required placeholder=" " name="entry.1899221405">
+                    <label for="fullname" class="labelInputText">Full name (EN)</label>
+                </div>
+            </div>
+            <div class="row" style="margin: 0px 0 0px 0;">
+                <div class="col-6 testtest">
+                    <input id="ggez" class="form-control inputText" type="text" required placeholder=" " name="entry.735567314">
+                    <label for="ggez" class="labelInputText">Chinese name (if any)</label>
+                    <div class="invalid-feedback">Type "N/A" if none</div>
+                </div>
+                <div class="col-6">
+                    <input id="nickname" class="form-control inputText" type="text" placeholder=" "  required name="entry.577162582">
+                    <label for="nickname" class="labelInputText">Preferred name</label>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: -30px;">
+                <div class="col-12">
+                    <input id="sid" class="form-control inputText" type="number" placeholder=" "  required name="entry.2058667560">
+                    <label for="sid" class="labelInputText">Student id</label>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="allRad row justify-content-between" style="margin-bottom: 31px;">
+                    <div class="form-check col-5 rad" onmouseout="hoverOut(this)" onmouseover="hover(this);" id="coverRad1">
+                        <div class="col-12 selectG">
+                            <input class="form-check-input radio" required type="radio" id="undergrad"
+                             value="Regular: all full-time local/non-local undergraduate students (175 HKD)" name="entry.2036655281">
+                            <label class="form-check-label memType" for="undergrad">
+                                Regular&nbsp;&nbsp;
+                            </label>
+                            <label class="form-check-label price" for="undergrad">
+                                :175 HKD
+                            </label>
+                            <br>
+                            <small class="form-text memTypeDef" for="undergrad">
+                                all full-time undergraduates
+                            </small>
+                            
+                        </div>
+                    </div>
+                    <div class="form-check col-5 rad" onmouseout="hoverOut(this)" onmouseover="hover(this);" id="coverRad2" >
+                        <div class="col-12 selectG">
+                            <input class="form-check-input radio" type="radio" id="associate" 
+                              value="Associate: all students that do not fall in the above category e.g. Exchange (120 HKD)" name="entry.2036655281">
+                            <label class="form-check-label memType" for="associate">
+                                Associate
+                            </label>
+                            <label class="form-check-label price" for="associate">
+                                :120 HKD
+                            </label>
+                            <br>
+                            <small class="form-text memTypeDef" for="associate">
+                                others e.g. Exchange, PhD
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mature">
+                    <input id="majorCode" class="col-12 form-control inputText" type="text" placeholder=" "  required aria-describedby="majorCode" name="entry.1472749587">
+                    <label for="majorCode" class="labelInputText">Major program code</label>
+                    <small id="majorCodeSmall" style="margin-top: -10px;" class="form-text">check your major program code <a href="http://www.res.cuhk.edu.hk/en-gb/general-information/program-codes">here</a></small>
+                </div>
+                <div class="row" style="margin-top: -2px;">
+                    <div class="col-6">
+                        <label style="margin-left: -6px;" for="formSelect" class="form-label SelectLabel">Country of Origin</label>
+                        <select required style="margin-left: -12px;" class="form-select" aria-label="Default select example" name="entry.1714443624">
+                            <option value="">-&nbsp;select&nbsp;-</option>
+                            <option value="Afghanistan">Afghanistan</option>
+                            <option value="Albania">Albania</option>
+                            <option value="Algeria">Algeria</option>
+                            <option value="American Samoa">American Samoa</option>
+                            <option value="Andorra">Andorra</option>
+                            <option value="Angola">Angola</option>
+                            <option value="Anguilla">Anguilla</option>
+                            <option value="Antarctica">Antarctica</option>
+                            <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Armenia">Armenia</option>
+                            <option value="Aruba">Aruba</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Austria">Austria</option>
+                            <option value="Azerbaijan">Azerbaijan</option>
+                            <option value="Bahamas">Bahamas</option>
+                            <option value="Bahrain">Bahrain</option>
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="Barbados">Barbados</option>
+                            <option value="Belarus">Belarus</option>
+                            <option value="Belgium">Belgium</option>
+                            <option value="Belize">Belize</option>
+                            <option value="Benin">Benin</option>
+                            <option value="Bermuda">Bermuda</option>
+                            <option value="Bhutan">Bhutan</option>
+                            <option value="Bolivia">Bolivia</option>
+                            <option value="Bonaire, Sint Eustatius and Saba">Bonaire, Sint Eustatius and Saba</option>
+                            <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                            <option value="Botswana">Botswana</option>
+                            <option value="Bouvet Island">Bouvet Island</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="Brunei Darussalam">Brunei Darussalam</option>
+                            <option value="Bulgaria">Bulgaria</option>
+                            <option value="Burkina Faso">Burkina Faso</option>
+                            <option value="Burundi">Burundi</option>
+                            <option value="Cambodia">Cambodia</option>
+                            <option value="Cameroon">Cameroon</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Cape Verde">Cape Verde</option>
+                            <option value="Cayman Islands">Cayman Islands</option>
+                            <option value="Central African Republic">Central African Republic</option>
+                            <option value="Chad">Chad</option>
+                            <option value="Chile">Chile</option>
+                            <option value="China">China</option>
+                            <option value="Christmas Island">Christmas Island</option>
+                            <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Comoros">Comoros</option>
+                            <option value="Congo">Congo</option>
+                            <option value="Cook Islands">Cook Islands</option>
+                            <option value="Costa Rica">Costa Rica</option>
+                            <option value="Cote D'Ivoire">Cote D'Ivoire</option>
+                            <option value="Croatia">Croatia</option>
+                            <option value="Cuba">Cuba</option>
+                            <option value="Curacao">Curacao</option>
+                            <option value="Cyprus">Cyprus</option>
+                            <option value="Czech Republic">Czech Republic</option>
+                            <option value="Denmark">Denmark</option>
+                            <option value="Djibouti">Djibouti</option>
+                            <option value="Dominica">Dominica</option>
+                            <option value="Dominican Republic">Dominican Republic</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="El Salvador">El Salvador</option>
+                            <option value="Equatorial Guinea">Equatorial Guinea</option>
+                            <option value="Eritrea">Eritrea</option>
+                            <option value="Estonia">Estonia</option>
+                            <option value="Ethiopia">Ethiopia</option>
+                            <option value="Faroe Islands">Faroe Islands</option>
+                            <option value="Fiji">Fiji</option>
+                            <option value="Finland">Finland</option>
+                            <option value="France">France</option>
+                            <option value="Gabon">Gabon</option>
+                            <option value="Gambia">Gambia</option>
+                            <option value="Georgia">Georgia</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Ghana">Ghana</option>
+                            <option value="Gibraltar">Gibraltar</option>
+                            <option value="Greece">Greece</option>
+                            <option value="Greenland">Greenland</option>
+                            <option value="Grenada">Grenada</option>
+                            <option value="Guadeloupe">Guadeloupe</option>
+                            <option value="Guam">Guam</option>
+                            <option value="Guatemala">Guatemala</option>
+                            <option value="Guernsey">Guernsey</option>
+                            <option value="Guinea">Guinea</option>
+                            <option value="Guinea-Bissau">Guinea-Bissau</option>
+                            <option value="Guyana">Guyana</option>
+                            <option value="Haiti">Haiti</option>
+                            <option value="Honduras">Honduras</option>
+                            <option value="Hong Kong SAR">Hong Kong SAR</option>
+                            <option value="Hungary">Hungary</option>
+                            <option value="Iceland">Iceland</option>
+                            <option value="India">India</option>
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="Iran">Iran</option>
+                            <option value="Iraq">Iraq</option>
+                            <option value="Ireland">Ireland</option>
+                            <option value="Israel">Israel</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Jamaica">Jamaica</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Jersey">Jersey</option>
+                            <option value="Jordan">Jordan</option>
+                            <option value="Kazakhstan">Kazakhstan</option>
+                            <option value="Kenya">Kenya</option>
+                            <option value="Kiribati">Kiribati</option>
+                            <option value="Korea">Korea</option>
+                            <option value="Kosovo">Kosovo</option>
+                            <option value="Kuwait">Kuwait</option>
+                            <option value="Kyrgyzstan">Kyrgyzstan</option>
+                            <option value="Lao">Lao</option>
+                            <option value="Latvia">Latvia</option>
+                            <option value="Lebanon">Lebanon</option>
+                            <option value="Lesotho">Lesotho</option>
+                            <option value="Liberia">Liberia</option>
+                            <option value="Libya">Libya</option>
+                            <option value="Liechtenstein">Liechtenstein</option>
+                            <option value="Lithuania">Lithuania</option>
+                            <option value="Luxembourg">Luxembourg</option>
+                            <option value="Macao SAR">Macao SAR</option>
+                            <option value="Macedonia">Macedonia</option>
+                            <option value="Madagascar">Madagascar</option>
+                            <option value="Malawi">Malawi</option>
+                            <option value="Malaysia">Malaysia</option>
+                            <option value="Maldives">Maldives</option>
+                            <option value="Mali">Mali</option>
+                            <option value="Malta">Malta</option>
+                            <option value="Marshall Islands">Marshall Islands</option>
+                            <option value="Martinique">Martinique</option>
+                            <option value="Mauritania">Mauritania</option>
+                            <option value="Mauritius">Mauritius</option>
+                            <option value="Mayotte">Mayotte</option>
+                            <option value="Mexico">Mexico</option>
+                            <option value="Moldova">Moldova</option>
+                            <option value="Monaco">Monaco</option>
+                            <option value="Mongolia">Mongolia</option>
+                            <option value="Montenegro">Montenegro</option>
+                            <option value="Montserrat">Montserrat</option>
+                            <option value="Morocco">Morocco</option>
+                            <option value="Mozambique">Mozambique</option>
+                            <option value="Myanmar">Myanmar</option>
+                            <option value="Namibia">Namibia</option>
+                            <option value="Nauru">Nauru</option>
+                            <option value="Nepal">Nepal</option>
+                            <option value="Netherlands">Netherlands</option>
+                            <option value="New Caledonia">New Caledonia</option>
+                            <option value="New Zealand">New Zealand</option>
+                            <option value="Nicaragua">Nicaragua</option>
+                            <option value="Niger">Niger</option>
+                            <option value="Nigeria">Nigeria</option>
+                            <option value="Niue">Niue</option>
+                            <option value="Norfolk Island">Norfolk Island</option>
+                            <option value="Norway">Norway</option>
+                            <option value="Oman">Oman</option>
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="Palau">Palau</option>
+                            <option value="Palestine">Palestine</option>
+                            <option value="Panama">Panama</option>
+                            <option value="Papua New Guinea">Papua New Guinea</option>
+                            <option value="Paraguay">Paraguay</option>
+                            <option value="Peru">Peru</option>
+                            <option value="Philippines">Philippines</option>
+                            <option value="Pitcairn">Pitcairn</option>
+                            <option value="Poland">Poland</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Puerto Rico">Puerto Rico</option>
+                            <option value="Qatar">Qatar</option>
+                            <option value="Reunion">Reunion</option>
+                            <option value="Romania">Romania</option>
+                            <option value="Russia">Russia</option>
+                            <option value="Rwanda">Rwanda</option>
+                            <option value="Saint Barthelemy">Saint Barthelemy</option>
+                            <option value="Saint Helena">Saint Helena</option>
+                            <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                            <option value="Saint Lucia">Saint Lucia</option>
+                            <option value="Saint Martin">Saint Martin</option>
+                            <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                            <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+                            <option value="Samoa">Samoa</option>
+                            <option value="San Marino">San Marino</option>
+                            <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                            <option value="Saudi Arabia">Saudi Arabia</option>
+                            <option value="Senegal">Senegal</option>
+                            <option value="Serbia">Serbia</option>
+                            <option value="Serbia and Montenegro">Serbia and Montenegro</option>
+                            <option value="Seychelles">Seychelles</option>
+                            <option value="Sierra Leone">Sierra Leone</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="Sint Maarten">Sint Maarten</option>
+                            <option value="Slovakia">Slovakia</option>
+                            <option value="Slovenia">Slovenia</option>
+                            <option value="Solomon Islands">Solomon Islands</option>
+                            <option value="Somalia">Somalia</option>
+                            <option value="South Africa">South Africa</option>
+                            <option value="South Sudan">South Sudan</option>
+                            <option value="Spain">Spain</option>
+                            <option value="Sri Lanka">Sri Lanka</option>
+                            <option value="Sudan">Sudan</option>
+                            <option value="Suriname">Suriname</option>
+                            <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+                            <option value="Swaziland">Swaziland</option>
+                            <option value="Sweden">Sweden</option>
+                            <option value="Switzerland">Switzerland</option>
+                            <option value="Syria">Syria</option>
+                            <option value="Taiwan">Taiwan</option>
+                            <option value="Tajikistan">Tajikistan</option>
+                            <option value="Tanzania">Tanzania</option>
+                            <option value="Thailand">Thailand</option>
+                            <option value="Timor-Leste">Timor-Leste</option>
+                            <option value="Togo">Togo</option>
+                            <option value="Tokelau">Tokelau</option>
+                            <option value="Tonga">Tonga</option>
+                            <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                            <option value="Tunisia">Tunisia</option>
+                            <option value="Turkey">Turkey</option>
+                            <option value="Turkmenistan">Turkmenistan</option>
+                            <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                            <option value="Tuvalu">Tuvalu</option>
+                            <option value="Uganda">Uganda</option>
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="United Arab Emirates">United Arab Emirates</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="United States">United States</option>
+                            <option value="Uruguay">Uruguay</option>
+                            <option value="Uzbekistan">Uzbekistan</option>
+                            <option value="Vanuatu">Vanuatu</option>
+                            <option value="Venezuela">Venezuela</option>
+                            <option value="Vietnam">Vietnam</option>
+                            <option value="Wallis and Futuna">Wallis and Futuna</option>
+                            <option value="Western Sahara">Western Sahara</option>
+                            <option value="Yemen">Yemen</option>
+                            <option value="Zambia">Zambia</option>
+                            <option value="Zimbabwe">Zimbabwe</option>
+                        </select>
+                    </div>
+                    <div class="col-6 rightyy">
+                        <label style="margin-left: 18px;" for="formSelect" class="form-label SelectLabel righty">College</label>
+                        <select required style="margin-left: 12px;" class="form-select" aria-label="Default select example" name="entry.1084462923">
+                            <option value=""><span class="selectBoxText">-&nbsp;select&nbsp;-</span></option>
+                            <option value="Chung Chi College">CC</option>
+                            <option value="United College">UC</option>
+                            <option value="New Asia College">NA</option>
+                            <option value="Shaw College">Shaw</option>
+                            <option value="S.H.Ho College">SH Ho</option>
+                            <option value="Morningside College">MC</option>
+                            <option value="Wu Yee Sun College">WYS</option>
+                            <option value="Lee Woo Sing College">LWS</option>
+                            <option value="C.W.Chu College">CW Chu</option>
+                        </select>
+                    </div>
+                </div>
+                
+                
+                <div class="row">
+                    <div class="col-6">
+                        <label style="margin-left: -6px;" for="formSelect" class="form-label SelectLabel long">Current Year of Study</label>
+                        <select required style="margin-left: -12px;" class="form-select" aria-label="Default select example" name="entry.2127555645">
+                            <option value="">--select--</option>
+                            <option value="Year 1">Year 1</option>
+                            <option value="Year 2">Year 2</option>
+                            <option value="Year 3">Year 3</option>
+                            <option value="Year 4 or above">Year 4 or above</option>
+
+                        </select>
+                    </div>
+                    <div class="col-6 rightyy">
+                        <label style="margin-left: 18px;" for="formSelect" class="form-label SelectLabel long righty">Expected Graduate Year</label>
+                        <select required style="margin-left: 12px;" class="form-select" aria-label="Default select example" name="entry.1798267004">
+                            <option value="">--select--</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027 or after">2027 or after</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form hide" id="warner">
+                    <div class="warner1">
+                        ** Please fill in all the required fields
+                    </div>
+                </div>
+                <div class="row justify-content-start applyBtnWrapper"  style="margin-top: 21px;">
+                    <button id="applyBtn" type ="button" class="btn btn-primary col-3 applyBtn">
+                        Apply!
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        <div class="form hide" id="part-two">
+            <div class="contact g-3 row justify-content-between">
+                <label class="col-sm-2 col-1 col-form-label" for="phoneNo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                        <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                      </svg>
+                    </label>
+                    <div id="phoneNo" class="col-sm-3 col-4" style="margin-right: -15px;">
+                        <div class="col-12 input-group">
+                            <span class="input-group-text" id="validationTooltipUsernamePrepend">+</span>
+                            <input type="text" class="form-control ccWhatsAppNum" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+                        </div>
+                    </div>
+                    <div class="col-sm-7 col-7">
+                        <div class="col-12">
+                            <input class="form-control WhatsAppNum" type="text" required placeholder="WhatsApp No." name="entry.1622491631">
+                        </div>
+                    </div>
+                </div>
+                <div class="contact g-3 row justify-content-between">
+                    <label class="col-sm-2 col-1 col-form-label" for="whatsappNo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                        </svg>
+                    </label>
+                    <div id="whatsappNo" class="col-sm-3 col-4" style="margin-right: -15px;">
+                        <div class="col-12 input-group">
+                            <span class="input-group-text" id="validationTooltipUsernamePrepend">+</span>
+                            <input type="text" class="form-control ccPhoneNum" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+                        </div>
+                    </div>
+                    <div class="col-sm-7 col-7">
+                        <div class="col-12">
+                            <input class="form-control PhoneNum" type="text" required placeholder="Phone No." name="entry.874037296">
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 16px">
+                    <input id="email" class="col-12 form-control inputText"  placeholder=" " type="text" required name="entry.1594704692">
+                    <label for="emial" class="labelInputText">Contact Email</label>
+                </div>
+            <div class="row">
+                <div class="row selectG2 justify-content-between">
+                    <div class="col-sm-4 rad2 cash payy">
+                        <input class="form-check-input radio" required type="checkbox" name="entry.1849535877" onclick="onlyOne(this); payMerge(this)" id="cash" value="In-person">
+                        <label class="form-check-label paymentType pay1" for="cash">
+                            In-Person
+                        </label>
+                        <svg id="img1" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
+                            <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+                            <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z"/>
+                        </svg>
+                    </div>
+                    <div class="col-sm-4 rad2 fps payy">
+                        <input class="form-check-input radio" type="checkbox" name="entry.1849535877" onclick="onlyOne(this); payMerge(this)" id="fps" value="Fast Payment Service (FPS)">
+                        <label class="form-check-label paymentType pay2" for="fps">
+                            FPS
+                        </label>
+                        <img id="img2" src="data:image/jpeg;base64,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" width="28" height="28">
+                    </div>
+                    <div class="col-sm-4 rad2 bank payy" style="margin-right: -15px;">
+                        <input class="form-check-input radio" type="checkbox" name="entry.1849535877" onclick="onlyOne(this); payMerge(this)" id="bank" value="Bank Transfer">
+                        <label class="form-check-label paymentType pay3" for="bank">
+                            Bank Transfer
+                        </label>
+                        <svg id="img3" xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-bank" viewBox="0 0 16 16">
+                            <path d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.501.501 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89L8 0ZM3.777 3h8.447L8 1 3.777 3ZM2 6v7h1V6H2Zm2 0v7h2.5V6H4Zm3.5 0v7h1V6h-1Zm2 0v7H12V6H9.5ZM13 6v7h1V6h-1Zm2-1V4H1v1h14Zm-.39 9H1.39l-.25 1h13.72l-.25-1Z"/>
+                          </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 row">
+                    <div class="col-12 hide payInperson" style="margin-bottom: 35px;">
+                        <div class="col-12 row justify-content-between">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action">
+                                  <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Atsuhi Imoto</h5>
+                                  </div>
+                                  <p class="mb-1 fs-6">WhatsApp/Phone: +852 6381 6228</p>
+                                  <small>Wu Yee Sun College</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                  <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Juan Cedrick</h5>
+                                  </div>
+                                  <p class="mb-1 fs-6">WhatsApp/Phone: +852 9839 7240</p>
+                                  <small class="">Morningside College</small>
+                                </a>
+                              </div>
+                            <!-- <div class="col-6 inpersoncontact sushiContact">
+                                <div class="contactName fs-5">
+                                    Atsushi Imoto
+                                </div>
+                                <div class="contactNum">
+                                    Wu Yee Sun College<br>WhatsApp/Phone: +852 6381 6228
+                                </div>
+                            </div> -->
+                            <!-- <div class="col-6 inpersoncontact cedrickContact">
+                                <div class="contactName fs-5">
+                                    Juan Fraderick
+                                </div>
+                                <div class="contactNum">
+                                    Morningside College<br>WhatsApp/Phone: +852 9839 7240
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="col-12 custom-control custom-checkbox agreement" style="margin-top: 25px;">
+                            <input required type="checkbox" class="col-1 custom-control-input" id="checkbox-2" name="entry.1963104637" value="Yes">
+                            <label class="col-11 custom-control-label" for="checkbox-2">
+                                I'll reach out to the contact person and complete the payment
+                            </label>
+                          </div>
+                    </div>
+                    <div class="hide col-12 payFPS noncash row justify-content-center">
+                        <!-- <div class="fs-5 contactName">
+                            Atsushi Imoto
+                        </div>
+                        <div class="fpsDetail">
+                            +852 6381 6228 (Payme / FPS)
+                        </div> -->
+                        <div class="card w-75">
+                            <div class="card-body">
+                              <h5 class="card-title">Atsushi Imoto</h5>
+                              <p class="card-text">+852 6381 6228 (Payme / FPS)</p>
+                            </div>
+                          </div>
+                    
+                    </div>
+                    <div class="hide col-12 row justify-content-center payBank noncash">
+                        <div class="card w-75">
+                            <div class="card-body">
+                              <h5 class="card-title">Atsushi Imoto</h5>
+                              <p class="card-text">139-898571-292 (HSBC)</p>
+                            </div>
+                          </div>
+
+                        <!-- <div class="fs-5 contactName">
+                            Atsushi Imoto
+                        </div>
+                        <div class="fpsDetail">
+                            139-898571-292 (HSBC)
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-start page2Btn" style="margin-top: -20px; margin-left: -10px;">
+                <div class="row col-sm-3 col-4" style="margin-right: -10px;">
+                    <button id="backBtn" type ="button" class="col-12 backBtn">
+                        Back
+                    </button>
+                </div>
+                <div class="row col-sm-3 col-4">
+                    <button id="finishBtn" class="col-12 finishBtn" type="button">
+                        Finish
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="form hide" id="warner">
+            <div class="invalid-feedback">
+                Please fill in all the required fields
+            </div>
+        </div>
+        <div class="form hide" id="part-four">
+
+        </div>
+    </form>
+</body>
+<script src="scriptt.js"></script>
+</html>

@@ -1,0 +1,541 @@
+.marquee-w {
+    position: relative;
+    max-width: 500px;
+    margin: 20px auto;
+    margin-bottom: 10px;
+}
+
+.marquee{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 6vw;
+    background: linear-gradient(to right top, #dd7eb4,#b096dc,#82d1f8);
+    -webkit-text-stroke: 3px transparent;
+    -webkit-background-clip: text;
+    letter-spacing: 1px;
+    animation: marquee 600ms ease-out 300ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.marquee2{
+    font-weight: 700;
+    font-size: 9vw;
+    -webkit-text-stroke: 6px transparent;
+    animation: marquee2 600ms ease-out 380ms;
+    animation-fill-mode: forwards;
+}
+@keyframes marquee2 {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    90%{
+        transform: translateX(-5%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes marquee {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    90%{
+        transform: translateX(5%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes form-fade-in{
+    0%{
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media only screen and (min-width: 500px){
+    .marquee-w{
+        font-size: 50px;
+    }
+    .marquee{
+        -webkit-text-stroke: 3.5px transparent;
+        font-size: 32px;
+    }
+    .marquee2{
+        -webkit-text-stroke: 7.5px transparent;
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .marquee-w{
+        font-size: 50px;
+    }
+    .marquee{
+        -webkit-text-stroke: 2.5px transparent;
+    }
+    .marquee2{
+        -webkit-text-stroke: 5px transparent;
+    }
+}
+
+
+
+#wholeform{
+    max-width: 500px;
+    margin: 0px auto;
+    position: relative;
+    border-color: black;
+    z-index: 1;
+    box-shadow: 0 10px 30px 0px rgba(0,0,0,0.1);
+    padding: 30px;
+    border-radius: 30px;
+    /* background-image: linear-gradient(to right top, #dd7eb4, #d186c4, #c28ed2, #b096dc, #9e9ee3, #91aaeb, #86b5f1, #7fc0f3, #82d1f8, #8de1fb, #9ff1fd, #b6ffff);
+    opacity: 0; */
+    background: white;
+    transform: translateY(10%);
+    animation: form-fade-in 500ms ease-out 100ms;
+    animation-fill-mode: forwards;
+}
+
+
+
+#warner{
+    position: relative;
+    margin-top: -10px;
+    height: 10px;
+    margin-bottom: 2px;
+    font-size: 13px;
+    color: rgb(206, 48, 24) !important;
+}
+
+.invalid-feedback{
+    position: absolute;
+    font-size: 12.5px !important;
+    color: rgb(206, 48, 24) !important;
+    margin-top: -20px !important;
+}
+
+label{
+    font-size: 15px;
+}
+
+.form div{
+    margin: 6px 0;
+}
+
+.form .inputText{
+    border-width: 0 0 1.7px 0;
+    /* box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.1); */
+    background: transparent;
+    height: 33px;
+    border-radius: 0px;
+}
+
+.form .labelInputText{
+    transform: translateY(-38px);
+}
+
+.form .inputText:focus + label,
+.form .inputText:not(:placeholder-shown) + label{
+    transform: translateY(-55px);
+}
+
+.form label{
+    background: linear-gradient(to right top, #dd7eb4,#b096dc,#82d1f8);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 600;
+    cursor: text;
+    transition: transform 0.2s ease-in-out;
+}
+
+.form select{
+    border-width: 0 0px 1.7px 0;
+    color: grey;
+    height: 35px;
+    width: 110%;
+}
+
+.radio{
+    border-width: 1px 2px 2px 1px !important;
+    border-color: black;
+}
+
+.selectG{
+    left: 14px;
+    top: 5px;
+    position: relative;
+    z-index: 5;
+}
+
+.payy label{
+    font-weight: 700;
+}
+
+#coverRad1{
+    z-index: 6;
+}
+
+.rad{
+    height: 55px;
+    background-color: white;
+    width: 190px !important;
+    border: 2px solid rgb(94, 94, 94, 0.3);
+    border-radius: 15px;
+    padding: 0 5px 0 5px;
+}
+
+.rad2{
+    height: 55px;
+    /*width: 120px !important;*/
+    border: 2px solid rgb(94, 94, 94, 0.3);
+    border-radius: 10px;
+    padding: 0 5px 0 5px;
+    background-color: white;
+}
+
+.rad2 input{
+    position: relative;
+    top: 12px;
+}
+
+.paymentType{
+    position: relative;
+    font-weight:500;
+    font-size: 11px;
+    top: 26px;
+}
+
+.pay1{
+    left: 15px;
+}
+.pay2{
+    left: 30px;
+}
+.pay3{
+    left: 7px;
+}
+
+.cash{
+    margin-left: -15px;
+}
+
+#img1{
+    position: relative;
+    margin-left: -30px;
+}
+#img2{
+    position: relative;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+#img3{
+    position: relative;
+    margin-left: -45px;
+    margin-top: 3px;
+}
+
+.custom-control-input{
+  width: 11px;
+  height: 11px;
+}
+.agreement{
+    position: relative;
+    left: -20px;
+    top: -25px;
+    font-size: 12px;
+}
+.agreement label{
+    margin-left: 12px;
+    font-size: 12px;
+}
+.inpersoncontact{
+    position: relative;
+    top: -25px;
+    text-align: center;
+}
+.sushiContact{
+    border-right: 2px dashed rgb(94, 94, 94, 0.3);
+}
+.sushiContact .contactName{
+    margin-left: -20px;
+}
+.sushiContact .contactNum{
+    font-size: 12px;
+    margin-left: -20px;
+}
+
+
+.evidence{
+    position: relative;
+    top: -25px;
+}
+.noncash{
+    position: relative;
+    text-align: center;
+    left: -5px;
+    top: -15px;
+}
+
+.contactName{
+    font-weight: 500;
+}
+.cedrickContact .contactName{
+    margin-left: 20px;
+}
+.cedrickContact .contactNum{
+    font-size: 12px;
+    margin-right: -20px;
+}
+
+
+.memType{
+    position: relative;
+    bottom: 9px;
+    left: 6px;
+    letter-spacing: 0px;
+    font-size: 18px;
+    font-weight:600;
+}
+
+.price{
+    position: relative;
+    bottom: 9px;
+    left: 5px;
+    font-size: 13px !important;
+}
+
+.memTypeDef{
+    position: relative;
+    top: -17px;
+    left: 7px;
+    font-size: 10px !important;
+    color:rgba(72, 72, 72, 0.5) !important;
+}
+
+
+.contact label{
+    position: relative;
+    bottom: 7px;
+    left: 25px;
+}
+
+.allRad{
+    position: relative;
+    top: 10px;
+}
+
+.hide{
+    display: none !important;
+}
+
+.display{
+    display: block;
+}
+
+.applyBtn{
+    letter-spacing: 0px;
+    border: 0 solid white !important;
+    background-image: linear-gradient(to right top, #dd7eb4, #d186c4, #c28ed2, #b096dc, #9e9ee3, #91aaeb, #86b5f1, #7fc0f3, #82d1f8, #8de1fb, #9ff1fd, #b6ffff);
+}
+.applyBtnWrapper{
+    display: inline-block;
+    padding-top: 0px;
+}
+
+
+small{
+    font-size: 12px !important;
+}
+
+.SelectLabel{
+    color: rgb(239, 233, 245);
+    font-weight: 500;
+}
+
+
+@media only screen and (max-width: 345px){
+    form label{
+        font-size: 9px;
+    }
+    #majorCodeSmall{
+        font-size: 9px !important;
+    }
+}
+
+
+@media only screen and (min-width: 345px) and (max-width: 465px){
+    #majorCodeSmall{
+        font-size: 10px !important;
+    }
+    form label{
+        font-size: 12px;
+    }
+    .rad{
+        width: 48% !important;
+    }
+    .memType{
+        bottom: 9px;
+        left: 3px;
+        font-size: 18px;
+    }
+    .price{
+        bottom: 14px;
+        left: 5px;
+        font-size: 12px !important;
+    }
+    .memTypeDef{
+        top: -17px;
+        left: -10px;
+        font-size: 8.5px !important;
+    }
+    .SelectLabel{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 344px){
+    .memTypeDef{
+        top: -17px;
+        left: -10px;
+        font-size: 8.5px !important;
+    }
+}
+
+@media only screen and (max-width: 385px){
+    .rad{
+        width: 100% !important;
+    }
+    .price{
+        bottom: 10px;
+        left: 5px;
+        font-size: 12px !important;
+    }
+    .memTypeDef{
+        font-size: 8.5 !important;
+        position: relative;
+        margin-left: 14px;
+    }
+    .payInperson .inpersoncontact .contactName{
+        font-size: 17px !important;
+    }
+    #wholeform{
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 385px) and (max-width: 428px){
+    .memTypeDef{
+        font-size: 8.5 !important;
+        position: relative;
+        margin-left: -6px;
+    }
+}
+
+@media only screen and (min-height: 710px){
+    #wholeform{
+        /* max-height: 95vh; */
+    }
+}
+
+
+@media only screen and (min-width: 578px){
+    .selectG2 .cash{
+        margin-left: -15px;
+    }
+}
+
+@media only screen and (max-width: 492px){
+    .righty{
+        margin-right: -20px;
+    }
+    .rightyy{
+        position: relative;
+        left: -6%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .righty{
+        margin-right: -38px;
+    }
+    .form select{
+        font-size: 12px;
+        text-align: center;
+        height: 28px;
+    }
+}
+@media only screen and (max-width: 355px){
+    .long{
+        font-size: 10.5px;
+        margin-right: -45px;
+    }
+    .rightyy{
+        left: -8%;
+    }
+}
+
+@media only screen and (max-width: 577px){
+    .cash{
+        left: -500px;
+    }
+    #img1{
+        margin-top: 6px;
+    }
+    #img2{
+        margin-top: 12px;
+    }
+    #img3{
+        margin-top: 10px;
+    }
+    .rad2 label{
+        left: 75px;
+        top: 10px;
+    }
+    .contact label svg{
+        margin-left: -20px;
+        width: 20px;
+        height: 20px;
+    }
+    .agreement label{
+        font-size: 9.5px;
+        margin-left: 5px;
+    }
+    .sushiContact{
+        border-right: 0px dashed rgb(94, 94, 94, 0.3);
+    }
+    .inpersoncontact .contactName{
+        font-size: 18px !important;
+    }
+    .inpersoncontact .contactNum{
+        font-size: 11px !important;
+    }
+    .agreement{
+        left: -5px;
+    }
+    .noncash .contactName{
+        font-size: 18px !important;
+    }
+    .noncash .fpsDetail{
+        font-size: 15px !important;
+    }
+    .payInperson .row{
+        margin-top: -100px;
+    }
+    .payFPS .card{
+        position: relative;
+        margin-top: -50px;
+    }
+}

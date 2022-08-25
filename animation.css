@@ -1,0 +1,131 @@
+@media only screen and (max-width: 577px){
+    @keyframes paymentMergeL1{
+        0%{
+            transform: translateY(0px);
+        }
+        100%{
+            transform: translateY(-48px);
+        }
+    }
+    @keyframes paymentMergeL2{
+        0%{
+            transform: translateY(0px);
+        }
+        100%{
+            transform: translateY(-95px);
+        }
+    }
+    @keyframes paymentMergeR1{
+        0%{
+            transform: translateY(0px);
+        }
+        100%{
+            transform: translateY(48px);
+        }
+    }
+    @keyframes paymentMergeR2{
+        0%{
+            transform: translateY(0px);
+        }
+        100%{
+            transform: translateY(95px);
+        }
+    }
+    .anim{
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    .animRev{
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-direction: reverse;
+    }
+    .rad2{
+        height: 45px;
+    }
+    #img1{
+        top: -3px;
+    }
+    #img2{
+        top: -3px;
+    }
+    #img3{
+        top: -3px;
+    }
+    .payy label{
+        top: 2px;
+    }
+}
+
+@media only screen and (min-width: 577px){
+@keyframes paymentMergeL1{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-135px);
+    }
+}
+@keyframes paymentMergeL2{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-272px);
+    }
+}
+@keyframes paymentMergeR1{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(135px);
+    }
+}
+@keyframes paymentMergeR2{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(272px);
+    }
+}
+.anim{
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.animRev{
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+}
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fadeInRev{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+.fadeIn_anim{
+    animation-name: fadeIn;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+.fadeIn_animRev{
+    animation-name: fadeInRev;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
