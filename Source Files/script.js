@@ -6,6 +6,8 @@ const applyBtn = document.getElementById("applyBtn");
 const backBtn = document.getElementById("backBtn");
 const finishBtn = document.getElementById("finishBtn");
 
+var warner2 = document.getElementById("warner2");
+
 var have_typed_wrong = false;
 
 var ccPhoneNum = document.getElementsByClassName("ccPhoneNum")[0];
@@ -14,6 +16,8 @@ var PhoneNum = document.getElementsByClassName("PhoneNum")[0];
 var WhatsAppNum = document.getElementsByClassName("WhatsAppNum")[0];
 finishBtn.addEventListener("click", function(){
     if(Can_moveon("part-two")){
+        warner2.classList.remove("display");
+        warner2.classList.add("hide");
         var aa = ccPhoneNum.value;
         var a = PhoneNum.value;
         var bb = ccWANum.value;
@@ -21,6 +25,11 @@ finishBtn.addEventListener("click", function(){
         PhoneNum.value = aa.toString() + "-" + a.toString();
         WhatsAppNum.value = bb.toString() + "-" + b.toString();
         finishBtn.type = "submit";
+    }
+    else{
+        warner2.classList.remove("hide");
+        warner2.classList.add("display");
+        console.log("pappp");
     }
 })
 
@@ -128,20 +137,6 @@ function onlyOne(checkbox) {
     })
 }
 
-/*
-const paymentOpt = document.getElementsByClassName("payy");
-var any_checked = false;
-console.log(paymentOpt);
-for(let i=0; i<3; i++){
-    var thiss = paymentOpt[i];
-    thiss.onclick = function(thiss){
-        console.log("wooooo");
-        any_checked = false;
-        //var checkboxess = document.getElementsByName('paymentType')
-        if(!thiss.checked) playAnimForward();
-        else playAnimBackward();
-    };
-}*/
 
 
 function payMerge(stuff){
